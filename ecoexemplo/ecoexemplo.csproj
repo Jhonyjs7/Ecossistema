@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F0B927C-19C2-4A39-8A70-923990AE09E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ecoexemplo</RootNamespace>
+    <AssemblyName>ecoexemplo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eco_adicionarInovacao.aspx" />
+    <Content Include="eco_ajudaContato.aspx" />
+    <Content Include="eco_alterarContaPF.aspx" />
+    <Content Include="eco_alterarContaPJ.aspx" />
+    <Content Include="eco_alterarSenha.aspx" />
+    <Content Include="eco_avaliacao.aspx" />
+    <Content Include="eco_cadastroPF.aspx" />
+    <Content Include="eco_cadastroPJ.aspx" />
+    <Content Include="eco_detalhesprojeto.aspx" />
+    <Content Include="eco_editarInovacao.aspx" />
+    <Content Include="eco_editarPerfil.aspx" />
+    <Content Include="eco_empresaInovadora.aspx" />
+    <Content Include="eco_entidadeDetalhes.aspx" />
+    <Content Include="eco_esqueciSenha.aspx" />
+    <Content Include="eco_mapaSite.aspx" />
+    <Content Include="eco_meuperfil.aspx" />
+    <Content Include="eco_perguntasFrequentes.aspx" />
+    <Content Include="eco_pessoas.aspx" />
+    <Content Include="eco_pessoasDetalhes.aspx" />
+    <Content Include="eco_politicaPrivacidade.aspx" />
+    <Content Include="eco_projetos.aspx" />
+    <Content Include="eco_sobre.aspx" />
+    <Content Include="eco_termosUso.aspx" />
+    <Content Include="footer.html" />
+    <Content Include="header.html" />
+    <Content Include="headerlogado.html" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_adicionarInovacao.aspx.cs">
+      <DependentUpon>eco_adicionarInovacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_adicionarInovacao.aspx.designer.cs">
+      <DependentUpon>eco_adicionarInovacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_ajudaContato.aspx.cs">
+      <DependentUpon>eco_ajudaContato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_ajudaContato.aspx.designer.cs">
+      <DependentUpon>eco_ajudaContato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_alterarContaPF.aspx.cs">
+      <DependentUpon>eco_alterarContaPF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_alterarContaPF.aspx.designer.cs">
+      <DependentUpon>eco_alterarContaPF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_alterarContaPJ.aspx.cs">
+      <DependentUpon>eco_alterarContaPJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_alterarContaPJ.aspx.designer.cs">
+      <DependentUpon>eco_alterarContaPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_alterarSenha.aspx.cs">
+      <DependentUpon>eco_alterarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_alterarSenha.aspx.designer.cs">
+      <DependentUpon>eco_alterarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_avaliacao.aspx.cs">
+      <DependentUpon>eco_avaliacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_avaliacao.aspx.designer.cs">
+      <DependentUpon>eco_avaliacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_cadastroPF.aspx.cs">
+      <DependentUpon>eco_cadastroPF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_cadastroPF.aspx.designer.cs">
+      <DependentUpon>eco_cadastroPF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_cadastroPJ.aspx.cs">
+      <DependentUpon>eco_cadastroPJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_cadastroPJ.aspx.designer.cs">
+      <DependentUpon>eco_cadastroPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_detalhesprojeto.aspx.cs">
+      <DependentUpon>eco_detalhesprojeto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_detalhesprojeto.aspx.designer.cs">
+      <DependentUpon>eco_detalhesprojeto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_editarInovacao.aspx.cs">
+      <DependentUpon>eco_editarInovacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_editarInovacao.aspx.designer.cs">
+      <DependentUpon>eco_editarInovacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_editarPerfil.aspx.cs">
+      <DependentUpon>eco_editarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_editarPerfil.aspx.designer.cs">
+      <DependentUpon>eco_editarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_empresaInovadora.aspx.cs">
+      <DependentUpon>eco_empresaInovadora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_empresaInovadora.aspx.designer.cs">
+      <DependentUpon>eco_empresaInovadora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_entidadeDetalhes.aspx.cs">
+      <DependentUpon>eco_entidadeDetalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_entidadeDetalhes.aspx.designer.cs">
+      <DependentUpon>eco_entidadeDetalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_esqueciSenha.aspx.cs">
+      <DependentUpon>eco_esqueciSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_esqueciSenha.aspx.designer.cs">
+      <DependentUpon>eco_esqueciSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_mapaSite.aspx.cs">
+      <DependentUpon>eco_mapaSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_mapaSite.aspx.designer.cs">
+      <DependentUpon>eco_mapaSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_meuperfil.aspx.cs">
+      <DependentUpon>eco_meuperfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_meuperfil.aspx.designer.cs">
+      <DependentUpon>eco_meuperfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_perguntasFrequentes.aspx.cs">
+      <DependentUpon>eco_perguntasFrequentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_perguntasFrequentes.aspx.designer.cs">
+      <DependentUpon>eco_perguntasFrequentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_pessoas.aspx.cs">
+      <DependentUpon>eco_pessoas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_pessoas.aspx.designer.cs">
+      <DependentUpon>eco_pessoas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_pessoasDetalhes.aspx.cs">
+      <DependentUpon>eco_pessoasDetalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_pessoasDetalhes.aspx.designer.cs">
+      <DependentUpon>eco_pessoasDetalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_politicaPrivacidade.aspx.cs">
+      <DependentUpon>eco_politicaPrivacidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_politicaPrivacidade.aspx.designer.cs">
+      <DependentUpon>eco_politicaPrivacidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_projetos.aspx.cs">
+      <DependentUpon>eco_projetos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_projetos.aspx.designer.cs">
+      <DependentUpon>eco_projetos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_sobre.aspx.cs">
+      <DependentUpon>eco_sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_sobre.aspx.designer.cs">
+      <DependentUpon>eco_sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco_termosUso.aspx.cs">
+      <DependentUpon>eco_termosUso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco_termosUso.aspx.designer.cs">
+      <DependentUpon>eco_termosUso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="scss\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49351</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62091/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
